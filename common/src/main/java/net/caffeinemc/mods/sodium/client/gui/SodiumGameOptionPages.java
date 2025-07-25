@@ -246,6 +246,12 @@ public class SodiumGameOptionPages {
                         .setControl(TickBoxControl::new)
                         .setBinding((opts, value) -> opts.quality.enableVignette = value, opts -> opts.quality.enableVignette)
                         .build())
+                .add(OptionImpl.createBuilder(boolean.class, sodiumOpts)
+                        .setName(Component.translatable("sodium.options.fog.name"))
+                        .setTooltip(Component.translatable("sodium.options.fog.tooltip"))
+                        .setControl(TickBoxControl::new)
+                        .setBinding((opts, value) -> opts.quality.useFog = value, opts -> opts.quality.useFog)
+                        .build())
                 .build());
 
 

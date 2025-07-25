@@ -76,6 +76,7 @@ public class SodiumGameOptions {
         public GraphicsQuality leavesQuality = GraphicsQuality.DEFAULT;
 
         public boolean enableVignette = true;
+        public boolean useFog = true;
     }
 
     public static class NotificationSettings {
